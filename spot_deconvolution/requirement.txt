@@ -1,0 +1,5 @@
+numpy>=1.22
+pandas==1.2.0
+scanpy>=1.6.0
+scikit-learn
+tqdm
