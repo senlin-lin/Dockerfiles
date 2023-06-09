@@ -1,0 +1,9 @@
+README.md
+setup.py
+pysodb/SODB.py
+pysodb/__init__.py
+pysodb.egg-info/PKG-INFO
+pysodb.egg-info/SOURCES.txt
+pysodb.egg-info/dependency_links.txt
+pysodb.egg-info/requires.txt
+pysodb.egg-info/top_level.txt

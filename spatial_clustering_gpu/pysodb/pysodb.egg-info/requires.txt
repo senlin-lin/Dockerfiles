@@ -1,0 +1,7 @@
+scanpy
+pandas
+numpy
+requests
+urllib3>=1.26.12
+tqdm
+anndata
