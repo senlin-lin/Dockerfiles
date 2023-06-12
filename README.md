@@ -18,6 +18,7 @@ On your local machine, log into Docker Hub or the Docker image repository of you
 
 ```bash
 docker login
+```
 
 You'll need to create a Docker Hub account in advance and enter your username and password.
 
@@ -28,6 +29,7 @@ Replace <username> with your Docker Hub username:
 ```bash
 docker tag my_custom_image:latest <username>/my_custom_image:latest
 docker push <username>/my_custom_image:latest
+```
 
 ## 2. Deploy the Docker Image on a new Server
 
@@ -38,11 +40,13 @@ The installation process may vary depending on the operating system. Here are th
 ```bash
 sudo apt-get update
 sudo apt-get install docker-ce
+```
 
 ### 2.2 Pull your image from Docker Hub
 
 ```bash
 docker pull <username>/my_custom_image:latest
+```
 
 ## 3. Run the Docker container on your new server
 
@@ -50,11 +54,13 @@ Now, you can run your Docker container on the new server. The following command 
 
 ```bash
 docker run -p 8888:8888 <username>/my_custom_image:latest
+```
 
 If your Docker configuration is GPU version and you want to use GPU, you need to run the following command:
 
 ```bash
 sudo docker run --gpus all -p 8888:8888 <username>/my_custom_image:latest
+```
 
 ## 4. Access Jupyter Notebook
 
