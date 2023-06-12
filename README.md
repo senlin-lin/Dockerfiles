@@ -44,6 +44,22 @@ sudo apt-get install docker-ce
 
 ### 2.2 Pull your image from Docker Hub
 
+We provide 10 images of six spatial transcription applications as follows：
+
+| Applications | <Username>/Image_name | Tag |
+|:-------:|:-------:|
+| spatially variable gene detection | linsenlin/svg_detection | latest |
+| spatial clustering | linsenlin/spatial_clustering | latest |
+| spatial clustering | linsenlin/spatial_clustering_gpu | latest |
+| pseudo-spatiotemporal analysis | linsenlin/spatiotemporal_analysis | latest |
+| pseudo-spatiotemporal analysis | linsenlin/spatiotemporal_analysis_gpu | latest |
+| spatial data integration | linsenlin/spatial_integration | latest |
+| spatial data integration | linsenlin/spatial_integration_gpu | latest |
+| spatial data alignment | linsenlin/spatial_alignment | latest |
+| spatial data alignment | linsenlin/spatial_alignment_gpu | latest |
+| spatial spot deconvolution | linsenlin/spot_deconvolution | latest |
+
+
 ```bash
 docker pull <username>/my_custom_image:latest
 ```
