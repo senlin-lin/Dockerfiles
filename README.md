@@ -7,7 +7,7 @@
 If you'd like to use the provided image directly, you can skip to step 2. Otherwise, build a Docker image in the directory containing your modified Dockerfile using the following command:
 
 ```bash
-docker build -t my_custom_image .
+sudo docker build -t my_custom_image .
 ```
 
 This command will use the Dockerfile to create a Docker image named my_custom_image.
@@ -17,7 +17,7 @@ This command will use the Dockerfile to create a Docker image named my_custom_im
 On your local machine, log into Docker Hub or the Docker image repository of your choice. For example, if you choose Docker Hub, use the following command to log in:
 
 ```bash
-docker login
+sudo docker login
 ```
 
 You'll need to create a Docker Hub account in advance and enter your username and password.
@@ -43,9 +43,7 @@ sudo apt-get install docker-ce
 ```
 
 ### 2.2 Pull your image from Docker Hub
-
-We provide 10 images of six spatial transcription applications as follows：
-
+  
 | Applications | <Username>/Image_name | Tag |
 |:-------:|:-------:|:-------:|
 | spatially variable gene detection | linsenlin/svg_detection | latest |
@@ -59,20 +57,27 @@ We provide 10 images of six spatial transcription applications as follows：
 | spatial data alignment | linsenlin/spatial_alignment_gpu | latest |
 | spatial spot deconvolution | linsenlin/spot_deconvolution | latest |
 
+We provide 10 images of six spatial transcription applications above：
+
+eg. sud docker pull linsenlin/spatial_clustering_gpu
 
 ```bash
-docker pull <username>/my_custom_image:latest
+sudo docker pull <username>/my_custom_image:latest
 ```
 
 ## 3. Run the Docker container on your new server
 
 Now, you can run your Docker container on the new server. The following command will run your container and map port 8888 of the server to port 8888 of the container:
 
+eg. sudo docker run -p 8888:8888 linsenlin/spatial_clustering:latest
+
 ```bash
-docker run -p 8888:8888 <username>/my_custom_image:latest
+sudo docker run -p 8888:8888 <username>/my_custom_image:latest
 ```
 
 If your Docker configuration is GPU version and you want to use GPU, you need to run the following command:
+
+eg. sudo docker run --gpus all -p 8888:8888 spatial_clustering_gpu:latest  
 
 ```bash
 sudo docker run --gpus all -p 8888:8888 <username>/my_custom_image:latest
