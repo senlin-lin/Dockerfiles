@@ -44,7 +44,7 @@ sudo apt-get install docker-ce
 
 ### 2.2 Pull the Image from Docker Hub
   
-| Applications | <Username>/Image_name | Tag |
+| Applications | Username/Image_name | Tag |
 |:-------:|:-------:|:-------:|
 | spatially variable gene detection | linsenlin/svg_detection | latest |
 | spatial clustering | linsenlin/spatial_clustering | latest |
