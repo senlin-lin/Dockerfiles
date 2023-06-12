@@ -9,6 +9,8 @@ If you'd like to use the provided image directly, you can skip to step 2. Otherw
 ```bash
 docker build -t my_custom_image .
 
+
+
 This command will use the Dockerfile to create a Docker image named my_custom_image.
 
 ### 1.2 Pushing your Docker Image to Docker Hub or other Docker image repositories
