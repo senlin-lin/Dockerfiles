@@ -47,7 +47,7 @@ sudo apt-get install docker-ce
 We provide 10 images of six spatial transcription applications as follows：
 
 | Applications | <Username>/Image_name | Tag |
-|:-------:|:-------:|
+|:-------:|:-------:|:-------:|
 | spatially variable gene detection | linsenlin/svg_detection | latest |
 | spatial clustering | linsenlin/spatial_clustering | latest |
 | spatial clustering | linsenlin/spatial_clustering_gpu | latest |
