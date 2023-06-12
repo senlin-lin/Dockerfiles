@@ -27,8 +27,8 @@ You'll need to create a Docker Hub account in advance and enter your username an
 Replace <username> with your Docker Hub username:
 
 ```bash
-docker tag my_custom_image:latest <username>/my_custom_image:latest
-docker push <username>/my_custom_image:latest
+sudo docker tag my_custom_image:latest <username>/my_custom_image:latest
+sudo docker push <username>/my_custom_image:latest
 ```
 
 ## 2. Deploy the Docker Image on a new Server
@@ -59,7 +59,7 @@ sudo apt-get install docker-ce
 
 We provide 10 images of six spatial transcription applications above：
 
-eg. sud docker pull linsenlin/spatial_clustering_gpu
+eg. sudo docker pull linsenlin/spatial_clustering_gpu:latest
 
 ```bash
 sudo docker pull <username>/my_custom_image:latest
