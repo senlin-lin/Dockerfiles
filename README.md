@@ -44,18 +44,18 @@ sudo apt-get install docker-ce
 
 ### 2.2 Pull the Image from Docker Hub
   
-| Applications | Username/Image_name | Tag |
-|:-------:|:-------:|:-------:|
-| spatially variable gene detection | linsenlin/svg_detection | latest |
-| spatial clustering | linsenlin/spatial_clustering | latest |
-| spatial clustering | linsenlin/spatial_clustering_gpu | latest |
-| pseudo-spatiotemporal analysis | linsenlin/spatiotemporal_analysis | latest |
-| pseudo-spatiotemporal analysis | linsenlin/spatiotemporal_analysis_gpu | latest |
-| spatial data integration | linsenlin/spatial_integration | latest |
-| spatial data integration | linsenlin/spatial_integration_gpu | latest |
-| spatial data alignment | linsenlin/spatial_alignment | latest |
-| spatial data alignment | linsenlin/spatial_alignment_gpu | latest |
-| spatial spot deconvolution | linsenlin/spot_deconvolution | latest |
+| Applications | Username/Image_name | Tag | Size |
+|:-------:|:-------:|:-------:|:-------:|
+| spatially variable gene detection | linsenlin/svg_detection | latest | 796.21M |
+| spatial clustering | linsenlin/spatial_clustering | latest | 4.56G |
+| spatial clustering | linsenlin/spatial_clustering_gpu | latest | 4.68G |
+| pseudo-spatiotemporal analysis | linsenlin/spatiotemporal_analysis | latest | 4.23G |
+| pseudo-spatiotemporal analysis | linsenlin/spatiotemporal_analysis_gpu | latest | 4.35G |
+| spatial data integration | linsenlin/spatial_integration | latest | 4.15G |
+| spatial data integration | linsenlin/spatial_integration_gpu | latest | 4.27G |
+| spatial data alignment | linsenlin/spatial_alignment | latest | 721.41M |
+| spatial data alignment | linsenlin/spatial_alignment_gpu | latest | 4.20G |
+| spatial spot deconvolution | linsenlin/spot_deconvolution | latest | 5.25G |
 
 We provide 10 images of six spatial transcription applications above：
 
